@@ -1,0 +1,21 @@
+[project]
+name = "document-rag-chatbot"
+version = "0.1.0"
+description = "Document Question Answering RAG application"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "python-dotenv",
+    "pydantic",
+    "langchain",
+    "langchain-community",
+    "langchain-huggingface",
+    "langchain-groq",
+    "langchain-text-splitters",
+    "pypdf",
+    "faiss-cpu",
+    "sentence-transformers",
+    "pandas",
+]

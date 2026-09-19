@@ -1,0 +1,10 @@
+{
+  "questions": [
+    "What does this product do?",
+    "How do I get started?"
+  ],
+  "expected_answers": [
+    "This is a placeholder evaluation dataset for a SaaS FAQ chat assistant.",
+    "Use the product documentation and retrieval pipeline to answer this question."
+  ]
+}
