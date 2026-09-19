@@ -40,7 +40,7 @@ function ChatWindow({
         try {
 
             const response = await fetch(
-                "/api/chat/",
+                "https://document-rag-chatbot-production.up.railway.app/api/chat/",
                 {
                     method: "POST",
 
