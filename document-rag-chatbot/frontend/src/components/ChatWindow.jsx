@@ -35,26 +35,22 @@ function ChatWindow({
 
 
         setLoading(true);
+try {
+    const response = await fetch(
+        "https://devoted-manifestation-production-927e.up.railway.app/api/chat/",
+        {
+            method: "POST",
 
+            headers: {
+                "Content-Type": "application/json",
+            },
 
-        try {
-
-            const response = await fetch(
-                "https://document-rag-chatbot-production.up.railway.app/api/chat/",
-                {
-                    method: "POST",
-
-                    headers: {
-                        "Content-Type":
-                            "application/json",
-                    },
-
-                    body: JSON.stringify({
-                        question,
-                        session_id: sessionId,
-                    }),
-                }
-            );
+            body: JSON.stringify({
+                question,
+                session_id: sessionId,
+            }),
+        }
+    );
 
 
             const data =
